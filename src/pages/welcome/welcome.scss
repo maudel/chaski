@@ -1,31 +1,33 @@
 page-welcome {
   .splash-bg {
     position: relative;
-    background: url('../assets/img/splashbg.png') no-repeat transparent;
+    // TO DO according to device size set image
+    background: url('../assets/img/Login-i6P.png') no-repeat transparent;
     background-size: cover;
-    height: 45%;
+    height: 100%;
     z-index: 1;
-    background-repeat: repeat-x;
-    animation: animatedBackground 40s linear infinite;
+    // TO DO modify image or use another animation
+    //animation: animatedBackground 5s linear infinite;
   }
 
-  @keyframes animatedBackground {
-    from { background-position: 0 0; }
-    to { background-position: 100% 0; }
-  }
+  //@keyframes animatedBackground {
+  //  from { background-position: 0 0; }
+  //  to { background-position: 50% 0; }
+  //}
 
   .splash-info {
+    top: 160px;
     position: relative;
     z-index: 2;
-    margin-top: -64px;
+    margin-top: 0;
     text-align: center;
   }
   .splash-logo {
     margin: auto;
-    background: url('../assets/img/appicon.png') repeat transparent;
+    background: url('../assets/img/logo3.png') no-repeat transparent;
     background-size: 100%;
-    width: 128px;
-    height: 128px;
+    width: 200px;
+    height: 200px;
   }
   .splash-intro {
     font-size: 18px;
